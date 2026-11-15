@@ -13,7 +13,7 @@ An exploratory data analysis and visualisation project on **688,099 monthly reco
 
 ## Key findings
 
-**1. Strong seasonality, steady growth — then a structural break.**
+**1. Strong seasonality, steady growth - then a structural break.**
 Traffic grew steadily from 2016 to 2019, peaking at about **1.68 million flights per month** in summer 2019.
 Summer months run about 28% above the yearly average and winter months about 22% below it.
 In **April 2020, traffic fell 90%** compared with April 2019. April and May 2020 are the only months flagged as statistical

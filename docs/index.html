@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>European Airport Traffic Analysis — Interactive Charts</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Arial, sans-serif; margin: 0; color: #1f2933; background: #f7f8fa; }
+  header { background: #1F3A5F; color: #fff; padding: 40px 24px; }
+  header h1 { margin: 0 0 8px; font-size: 28px; }
+  header p { margin: 0; max-width: 760px; line-height: 1.5; opacity: .9; }
+  main { max-width: 1000px; margin: 0 auto; padding: 32px 24px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  a.card { display: block; background: #fff; border-radius: 10px; padding: 18px; text-decoration: none; color: inherit;
+           box-shadow: 0 1px 3px rgba(0,0,0,.12); border-left: 4px solid #1F3A5F; transition: transform .15s; }
+  a.card:hover { transform: translateY(-3px); }
+  a.card h2 { margin: 0 0 6px; font-size: 17px; color: #1F3A5F; }
+  a.card p { margin: 0; font-size: 14px; line-height: 1.45; }
+  footer { text-align: center; font-size: 14px; padding: 24px; }
+  footer a { color: #1F3A5F; }
+</style>
+</head>
+<body>
+<header>
+  <h1>European Airport Traffic Analysis (2016–2022)</h1>
+  <p>688,099 monthly records from 332 European airports. Open any chart to explore it — hover for values, zoom, and filter.</p>
+</header>
+<main>
+  <div class="cards">
+    <a class="card" href="monthly_trend.html"><h2>Monthly traffic trend</h2><p>Total IFR flights per month, 2016–2022.</p></a>
+    <a class="card" href="seasonality_heatmap.html"><h2>Seasonality matrix</h2><p>Year × month heatmap of total flights.</p></a>
+    <a class="card" href="time_series_decomposition.html"><h2>Time series decomposition</h2><p>Trend, seasonality and residual components.</p></a>
+    <a class="card" href="anomaly_zscore.html"><h2>Anomaly detection</h2><p>Residual z-scores; April–May 2020 flagged.</p></a>
+    <a class="card" href="spatial_concentration_map.html"><h2>Spatial concentration</h2><p>Average traffic and source agreement by airport.</p></a>
+    <a class="card" href="hub_reporting_scatter.html"><h2>Hubs vs reporting</h2><p>Airport size vs airport-operator / Network Manager ratio.</p></a>
+    <a class="card" href="source_ratio_highest.html"><h2>Largest source gaps (higher)</h2><p>Airports where operators report more flights.</p></a>
+    <a class="card" href="source_ratio_lowest.html"><h2>Largest source gaps (lower)</h2><p>Airports where operators report fewer flights.</p></a>
+    <a class="card" href="monthly_animation.html"><h2>Animated monthly view</h2><p>Airport traffic month by month — press play.</p></a>
+  </div>
+</main>
+<footer>
+  <a href="https://github.com/MelikeGllnv/european-airport-traffic-analysis">View the code and findings on GitHub</a> · Melike Gullanova
+</footer>
+</body>
+</html>

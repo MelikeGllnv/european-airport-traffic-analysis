@@ -1,9 +1,9 @@
-# European Airport Traffic Analysis (2016–2022)
+# European Airport Traffic Analysis (2016-2022)
 
 **How does air traffic in Europe change over time, where is it concentrated, and how reliable are the two data sources that record it?**
 
 An exploratory data analysis and visualisation project on **688,099 monthly records from 332 European airports**
-(January 2016 – May 2022), built in Python with interactive Plotly charts.
+(January 2016 - May 2022), built in Python with interactive Plotly charts.
 
 📊 **Interactive charts:** [melikegllnv.github.io/european-airport-traffic-analysis](https://melikegllnv.github.io/european-airport-traffic-analysis/)
 
@@ -23,7 +23,7 @@ anomalies (residual z-score below −3). By May 2022, traffic had recovered to *
 
 **2. Traffic is highly concentrated.**
 Just **83 airports (about 25%) handle 80% of all flights**. Amsterdam, Paris CDG, Frankfurt, London Heathrow and Madrid
-carry the most traffic, and the busiest region is Western and Central Europe — a clear hub-and-spoke structure.
+carry the most traffic, and the busiest region is Western and Central Europe - a clear hub-and-spoke structure.
 
 ![Spatial concentration map](images/spatial_concentration_map.png)
 
@@ -39,19 +39,19 @@ airport-operator figures are a useful cross-check but should be validated airpor
 
 ## Data
 
-[TidyTuesday — European flights (2022-07-12)](https://github.com/rfordatascience/tidytuesday/blob/main/data/2022/2022-07-12/readme.md),
+[TidyTuesday - European flights (2022-07-12)](https://github.com/rfordatascience/tidytuesday/blob/main/data/2022/2022-07-12/readme.md),
 originally from the EUROCONTROL Aviation Intelligence Portal. Airport coordinates from [OurAirports](https://ourairports.com/data/)
 (99.4% of airports matched by ICAO code). Both datasets are downloaded automatically when the notebook runs.
 
 ## Method
 
-1. **Data profiling** — variable catalogue, missing / zero / negative value checks.
-2. **Outlier analysis** — IQR method; high outliers turn out to be the major hubs, not data errors.
-3. **Distribution analysis** — ECDF and log-scale histogram of monthly traffic.
-4. **Concentration analysis** — cumulative share of traffic by airport.
-5. **Time series analysis** — monthly trend, year × month heatmap, multiplicative decomposition, z-score anomaly detection (statsmodels).
-6. **Spatial analysis** — geocoding by ICAO code and an interactive map of traffic volume and source agreement.
-7. **Source comparison** — airport-operator vs Network Manager counts by airport and over time.
+1. **Data profiling** - variable catalogue, missing / zero / negative value checks.
+2. **Outlier analysis** - IQR method; high outliers turn out to be the major hubs, not data errors.
+3. **Distribution analysis** - ECDF and log-scale histogram of monthly traffic.
+4. **Concentration analysis** - cumulative share of traffic by airport.
+5. **Time series analysis** - monthly trend, year × month heatmap, multiplicative decomposition, z-score anomaly detection (statsmodels).
+6. **Spatial analysis** - geocoding by ICAO code and an interactive map of traffic volume and source agreement.
+7. **Source comparison** - airport-operator vs Network Manager counts by airport and over time.
 
 Each chart in the notebook comes with a short visual-encoding table (mark, channels, data types), following
 data-visualisation design principles.
